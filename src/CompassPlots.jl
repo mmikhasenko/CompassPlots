@@ -34,6 +34,7 @@ export TwoRanges
 include("recipes.jl")
 
 export argdeg
+export merge_pdfs
 include("utils.jl")
 
 end # module
