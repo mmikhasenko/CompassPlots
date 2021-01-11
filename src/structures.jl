@@ -41,7 +41,7 @@ end
 #
 function relativephase(a1::SampledAmplitude, a2::SampledAmplitude)
     a1a2′ = values(a1) .* conj.(values(a2))
-    SampledFunction(sa_f0_sum.xv, argdeg.(a1a2′))
+    SampledFunction(a1.xv, argdeg.(a1a2′))
 end
 #
 adjust(x,y,x0=1.4,y0=110) = (x<x0 && y>y0) ? -360 : 0.0
