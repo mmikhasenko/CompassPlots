@@ -50,7 +50,7 @@ adjust(lsf::LabeledSampledFunction) = LabeledSampledFunction(adjust(lsf.sf), lsf
 # 
 
 @with_kw struct Model{N,T}
-    components::SVector{N,SampledFunction{Complex{Float64}}}
+    components::SVector{N,SampledAmplitude}
     labels::SVector{N,T}
     phasespace::SampledFunction{Float64}
 end
