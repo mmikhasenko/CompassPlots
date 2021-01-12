@@ -16,6 +16,7 @@
         @series begin
             seriestype := :scatter
             label := L"\textrm{mass-ind.\,fit}"
+            markersize := 4
             markershape := :+
             ([-1e3], [0.0])
         end
